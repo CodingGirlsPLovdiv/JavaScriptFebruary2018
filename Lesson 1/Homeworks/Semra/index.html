@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript HW1 | Semra Pelfanova</title>
+<body>
+	<p id="demo"></p>
+<script type="text/javascript">
+		//Task 1:
+var first_name = "Semra";
+var last_name = "Pelfanova";
+
+//console.log('Hello, my name is ' + first_name + ' ' + last_name + '!');
+document.getElementById('demo').innerHTML = 'Hello, my name is ' + first_name + ' ' + last_name + '!';
+
+//Task 2:
+var a = 1;
+var b = 9;
+var c = 7;
+
+//var max = Math.max(a, b, c);
+//console.log(max);
+
+var max;
+var outStr = 'The maximum number of ' + a + ', ' + b + ' and ' + c + ' is ' + max + '!';
+ if(a > b && a > c){
+ 		max = a;
+ 		console.log('The maximum number of ' + a + ', ' + b + ' and ' + c + ' is ' + max + '!');
+ 	}
+ 	else if(b > c){
+ 		max = b;
+ 		console.log('The maximum number of ' + a + ', ' + b + ' and ' + c + ' is ' + max + '!');
+ 	}
+	else {
+ 		max = c;
+		console.log('The maximum number of ' + a + ', ' + b + ' and ' + c + ' is ' + max + '!');
+ }
+
+//Task 3:
+var number = 8;
+if(number % 2 != 0){
+	console.log('The number ' + number + ' is odd');
+}
+else{
+	console.log('The number ' + number + ' is even');
+}
+
+//Task 4:
+var month = Math.floor(Math.random() * 10) + 3;
+var monthName = "";
+switch(month){
+	case 1: monthName = 'January';
+		break;
+	case 2: monthName = 'February';
+		break;
+	case 3: monthName = 'March';
+		break;
+	case 4: monthName = 'April';
+		break;
+	case 5: monthName = 'May';
+		break;
+	case 6: monthName = 'June';
+		break;
+	case 7: monthName = 'July';
+        break;
+    case 8: monthName = 'August';
+        break;
+    case 9: monthName = 'September';
+        break;
+    case 10: monthName = 'October';
+        break;
+    case 11: monthName = 'November';
+        break;
+    case 12: monthName = 'December';
+        break;
+}
+console.log(monthName);
+	</script>
+</body>
+</html>
+
